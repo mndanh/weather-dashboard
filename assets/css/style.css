@@ -1,0 +1,107 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    padding: 20px;
+    background-color: darkblue;
+    color: white;
+    text-align: center;
+}
+
+body {
+    display: flex;
+    flex-direction: column; 
+}
+
+.totalMain.container-fluid {
+    display: flex;
+    flex-direction: row;
+}
+
+.searchCity {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    align-items: center;
+}
+
+input {
+    width: 100%;
+}
+
+.allWeather.container-fluid {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    align-items: end;
+    justify-content: center;
+}
+
+.forecastContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center space-between;
+}
+
+
+#forecastData {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.forecast-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 8px;
+    text-align: center;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(20% - 16px); /* Adjust width as needed */
+    max-width: calc(20% - 16px); /* Adjust width as needed */
+    background-color: rgb(9, 9, 61);
+    color: white;
+}
+
+#currentWeather {
+    border: solid 1px black;
+    margin: 20px;
+}
+
+button {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(0, 162, 255);
+}
+
+.container-fluid #savedCities {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+} 
+
+#savedCities {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.city-button {
+    background-color: gray;
+    border: none;
+    border-radius: 4px;
+    color: black;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+
+
