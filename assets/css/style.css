@@ -5,8 +5,10 @@
 header {
     padding: 20px;
     background-color: darkblue;
+    background-image: linear-gradient(to right, rgb(69, 69, 216) to darkblue);
     color: white;
     text-align: center;
+    padding-left: 35%;
 }
 
 body {
@@ -24,6 +26,14 @@ body {
     flex-direction: column;
     width: 25%;
     align-items: center;
+}
+
+hr {
+    width: 100%;
+    max-width: 500px;
+    margin: 20px 0;
+    border: 0;
+    border-top: 1px solid #ccc;
 }
 
 input {
