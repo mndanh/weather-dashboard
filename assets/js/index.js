@@ -64,7 +64,7 @@ function fetchCityWeather(city) {
      return resp.json()
     })
     .then( function(data){
-      //  console.log(data);
+       console.log(data);
       let h2 = document.createElement("h2");
       h2.textContent = `${city} (${dayjs().format('MM/DD/YYYY')})`;
 
