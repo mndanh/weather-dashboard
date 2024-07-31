@@ -42,7 +42,7 @@ function displaySavedCities() {
 }
 
 function fetchCityWeather(city) {
-   fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=5&appid=${apiKey}`)
+   fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=5&appid=${apiKey}`)
        .then(resp => resp.json())
        .then(data => {
            if (data.length > 0) {
@@ -133,7 +133,7 @@ function forecastWeather(lat, lon) {
     fetchCityWeather(city);
     
 
-    fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=5&appid=${apiKey}`)
+    fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=5&appid=${apiKey}`)
  .then( function(resp) {
   return resp.json()
  })
