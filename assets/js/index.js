@@ -42,7 +42,7 @@ function displaySavedCities() {
 }
 
 function fetchCityWeather(city) {
-   fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=5&appid=${apiKey}`)
+   fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=5&appid=${apiKey}`)
        .then(resp => resp.json())
        .then(data => {
            if (data.length > 0) {
@@ -69,7 +69,7 @@ function fetchCityWeather(city) {
       h2.textContent = `${city} (${dayjs().format('MM/DD/YYYY')})`;
 
       let icon = document.createElement("img");
-      icon.src = `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
+      icon.src = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
       icon.alt = data.weather[0].description;
 
       let temp = document.createElement("p");
@@ -108,7 +108,7 @@ function forecastWeather(lat, lon) {
                h3.textContent = `(${formattedDate})`;
 
                let icon = document.createElement("img");
-               icon.src = `http://openweathermap.org/img/wn/${info.weather[0].icon}@2x.png`;
+               icon.src = `https://openweathermap.org/img/wn/${info.weather[0].icon}@2x.png`;
                icon.alt = info.weather[0].description;
 
                let temp = document.createElement("p");
@@ -133,7 +133,7 @@ function forecastWeather(lat, lon) {
     fetchCityWeather(city);
     
 
-    fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=5&appid=${apiKey}`)
+    fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=5&appid=${apiKey}`)
  .then( function(resp) {
   return resp.json()
  })
