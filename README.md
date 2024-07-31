@@ -6,4 +6,4 @@ For this assignment I had to create a weather dashboard that would leverage APIs
 [Click here to see the deployed version](https://mndanh.github.io/weather-dashboard/) 
 
 ## Screenshot of the Deployed Version
-[Screenshot of the web page](./images/weather-screenshot.JPG)
+[Screenshot of the web page](./assets/images/weather-screenshot.JPG)
