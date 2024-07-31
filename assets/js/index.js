@@ -104,8 +104,8 @@ function forecastWeather(lat, lon) {
                let card = document.createElement("div");
                card.className = 'forecast-card';
 
-               let h2 = document.createElement("h2");
-               h2.textContent = `(${formattedDate})`;
+               let h3 = document.createElement("h3");
+               h3.textContent = `(${formattedDate})`;
 
                let icon = document.createElement("img");
                icon.src = `http://openweathermap.org/img/wn/${info.weather[0].icon}@2x.png`;
@@ -120,7 +120,7 @@ function forecastWeather(lat, lon) {
                let humidity = document.createElement("p");
                humidity.textContent = `Humidity: ${info.main.humidity} %`;
 
-               card.append(h2, icon, temp, wind, humidity);
+               card.append(h3, icon, temp, wind, humidity);
                forecastContainer.appendChild(card);
            }
        });
@@ -147,18 +147,3 @@ function forecastWeather(lat, lon) {
  })
 
  document.addEventListener("DOMContentLoaded", displaySavedCities);
-
-//  function saveToLocalStorage(){
-//    localStorage.setItem("currAndFore", JSON.stringify(currentForecast));
-//  }
-
- /*
-  2. Async/await 
-*/ 
-
- 
-
- // We make our final fetch call and we get an array with 40 weather forecast objects
-//logic to get forecast data
- 
- // the cool solution involves:  array.filter()  +  a JS math operator 
